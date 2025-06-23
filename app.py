@@ -2,11 +2,11 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # 允許跨域請求
+CORS(app)  
 
 @app.route("/", methods=["GET"])
 def hello():
-    return "Hello from Python backend!"
+    return "Hello from Python API test!"
 
 @app.route("/get-id", methods=["POST"])
 def get_id():
